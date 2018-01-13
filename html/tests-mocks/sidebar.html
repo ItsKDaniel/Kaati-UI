@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: "Lato", sans-serif;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 5vw;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            margin: 0;
+
+            background-color: #3a3a3a;
+            overflow-x: hidden;
+
+        }
+
+        /* .sidenav a {
+    padding: 6px 6px 6px 32px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #818181;
+    display: block;
+} */
+
+        .sidebarIcons {
+            padding: 4vh 1.65vw 4vh 1.65vw;
+            font-size: 1.7vw;
+            display: block;
+            color: white;
+        }
+
+        .sidebarIcons:hover {
+            background-color: #e3f2d7;
+            color: #3a3a3a;
+        }
+
+        .notificationbar {
+            background-color: #3a3a3a;
+            height: 5%;
+            width: 100%;
+            position: fixed;
+            left: -0.01vw;
+
+        }
+
+        .logo {
+
+            padding: 1vh 1vw 1vh 1.5vw;
+            font-size: 2vw;
+            display: block;
+            color: #3a3a3a;
+
+        }
+
+        /* .sidenav a:hover {
+    color: #f1f1f1;
+} */
+
+        .main {
+            margin-left: 5vw;
+            /* Same as the width of the sidenav */
+            margin-top: -1%;
+            overflow: hidden;
+        }
+
+        .feed {
+            padding-top: 1vh;
+        }
+
+        .bglogo {
+            padding-top: 4vh;
+            margin-top: -2.6vh;
+            background-color: #C1E1A6;
+            height: 7vh;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+            .sidenav a {}
+        }
+
+        .top-nav-container {
+            margin-top: 5%;
+        }
+    </style>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+
+    <div class="sidenav">
+        <div class="bglogo">
+            <a href="#" class="logo">
+                <i class="fa fa-vk  "></i>
+            </a>
+        </div>
+
+        <a href="#" class="sidebarIcons">
+            <i class="fa fa-home"></i>
+        </a>
+
+
+        <a href="#" class="sidebarIcons">
+            <i class="fa fa-sticky-note-o"></i>
+        </a>
+
+
+        <a href="#" class="sidebarIcons">
+            <i class="fa fa-address-card-o"></i>
+        </a>
+
+
+        <a href="#" class="sidebarIcons">
+            <i class="fa fa-trash"></i>
+        </a>
+
+
+    </div>
+
+
+    <div class="main">
+        <div class="notificationbar">
+        </div>
+        <div class="top-nav-container">
+            <h2>Sidenav Example</h2>
+            <p>This sidenav is always shown.</p>
+        </div>
+    </div>
+</body>
+
+</html>
